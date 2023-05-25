@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="535.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmaster.AddDescriptionSubtask">
+   <children>
+      <Label layoutX="314.0" layoutY="29.0" text="Описывайте выбранную подзадачу пунктами!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableDescription" layoutX="300.0" layoutY="81.0" prefHeight="433.0" prefWidth="458.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="47.0" layoutY="96.0" text="Добавьте название:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="174.0" prefHeight="20.0" prefWidth="144.0" text="Добавьте описание:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="areaDescription" layoutX="45.0" layoutY="205.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="nameDescription" layoutX="45.0" layoutY="124.0" />
+      <Button layoutX="34.0" layoutY="428.0" mnemonicParsing="false" onAction="#closeDescriptionSubtask" text="Отмена">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="194.0" layoutY="428.0" mnemonicParsing="false" onAction="#addDescriptionSubtask1" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="479.0" mnemonicParsing="false" onAction="#deleteDescriptionSubtask" text="Удалить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="783.0" layoutY="86.0" text="Редактируйте пункты подзадачи!">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="updateDescrSubtaskName" layoutX="783.0" layoutY="149.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="updateDescrSubraskDesc" layoutX="783.0" layoutY="215.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="784.0" layoutY="128.0" text="Новое название:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="783.0" layoutY="195.0" text="Новое описание:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="807.0" layoutY="449.0" mnemonicParsing="false" onAction="#updateDescrSubtask" text="Редактировать пункт">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

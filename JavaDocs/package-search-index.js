@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.taskmaster","l":"com.example.taskmaster"},{"m":"com.example.taskmaster","l":"DAO.DescriptionSubtaskDAO"},{"m":"com.example.taskmaster","l":"DAO.SubtaskDAO"},{"m":"com.example.taskmaster","l":"DAO.TaskDAO"},{"m":"com.example.taskmaster","l":"model"}];updateSearchResults();

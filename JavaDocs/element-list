@@ -1,0 +1,6 @@
+module:com.example.taskmaster
+com.example.taskmaster
+DAO.DescriptionSubtaskDAO
+DAO.SubtaskDAO
+DAO.TaskDAO
+model

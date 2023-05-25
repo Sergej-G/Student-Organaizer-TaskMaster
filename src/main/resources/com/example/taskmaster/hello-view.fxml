@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="758.0" prefWidth="1188.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmaster.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <AnchorPane prefHeight="719.0" prefWidth="1152.0">
+        <children>
+            <Label fx:id="oglav" layoutX="474.0" layoutY="1.0" text="Ваши задачи на сегодня">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TableView fx:id="table" layoutX="14.0" layoutY="86.0" prefHeight="554.0" prefWidth="895.0">
+                <columns>
+                    <TableColumn prefWidth="75.0" text="C1" />
+                    <TableColumn prefWidth="702.0" text="C2" />
+                </columns>
+            </TableView>
+         <Button fx:id="addTask" layoutX="13.0" layoutY="40.0" mnemonicParsing="false" onAction="#windowAddTask" text="Добавить задачу">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <Button layoutX="323.0" layoutY="40.0" mnemonicParsing="false" onAction="#output" text="Обновить список">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <DatePicker fx:id="dateTask" layoutX="726.0" layoutY="40.0" onAction="#sortByDate" prefHeight="30.0" prefWidth="180.0" />
+         <Button layoutX="156.0" layoutY="40.0" mnemonicParsing="false" onAction="#windowDetailsTask" text="Детализация задачи">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <Button layoutX="974.0" layoutY="610.0" mnemonicParsing="false" onAction="#deleteTask" text="Удалить задачу">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label layoutX="912.0" layoutY="86.0" text="Редактируйте уже созданную задачу!">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="updateTaskField" layoutX="960.0" layoutY="157.0" />
+            <Button fx:id="drop" layoutX="13.0" layoutY="652.0" mnemonicParsing="false" onAction="#drop" text="Удалить все задачи">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <TextArea fx:id="updateTaskArea" layoutX="960.0" layoutY="224.0" prefHeight="190.0" prefWidth="149.0" />
+         <DatePicker fx:id="updateTaskData" layoutX="948.0" layoutY="468.0" />
+         <Label layoutX="960.0" layoutY="131.0" text="Новое наименование:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="960.0" layoutY="199.0" text="Новое описание:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="960.0" layoutY="443.0" text="Новый дедлайн:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Button layoutX="952.0" layoutY="510.0" mnemonicParsing="false" onAction="#updateTask" text="Редактировать задачу">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label layoutX="598.0" layoutY="45.0" text="Дата вывода задач:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+        </children>
+    </AnchorPane>
+</VBox>

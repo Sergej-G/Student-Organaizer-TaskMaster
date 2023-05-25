@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="614.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taskmaster.DetailsTask">
+   <children>
+       <Label layoutX="483.0" layoutY="14.0" text="Детализация задачи">
+           <font>
+               <Font size="18.0" />
+           </font>
+       </Label>
+       <Label layoutX="25.0" layoutY="109.0" text="Наименование подзадачи:">
+           <font>
+               <Font size="14.0" />
+           </font>
+       </Label>
+       <Label layoutX="23.0" layoutY="167.0" text="Краткое описание подзадачи:">
+           <font>
+               <Font size="14.0" />
+           </font>
+       </Label>
+      <TableView fx:id="tableDetails" layoutX="306.0" layoutY="57.0" prefHeight="228.0" prefWidth="548.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="detailsName" layoutX="23.0" layoutY="131.0" prefHeight="25.0" prefWidth="246.0" />
+      <TextArea fx:id="detailsDescription" layoutX="23.0" layoutY="187.0" prefHeight="258.0" prefWidth="246.0" />
+      <Button fx:id="addDetails" layoutX="188.0" layoutY="461.0" mnemonicParsing="false" onAction="#addDetails" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeDetails" layoutX="25.0" layoutY="461.0" mnemonicParsing="false" onAction="#closeDetails" text="Отмена">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="59.0" layoutY="529.0" mnemonicParsing="false" onAction="#outputDetails" text="Просмотреть подзадачи">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="25.0" layoutY="65.0" text="Добавление подзадачи">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="914.0" layoutY="546.0" mnemonicParsing="false" onAction="#deleteSubtask" text="Удалить подзадачу">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableDescription" layoutX="306.0" layoutY="341.0" prefHeight="258.0" prefWidth="548.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="484.0" layoutY="294.0" mnemonicParsing="false" onAction="#windowAddDescriptionSubtask" text="Окно описания подзадач">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="885.0" layoutY="57.0" text="Редактируйте подзадачу!">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextArea fx:id="updateSubtaskDescr" layoutX="883.0" layoutY="198.0" prefHeight="200.0" prefWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="updateSubtaskName" layoutX="883.0" layoutY="123.0" prefHeight="25.0" prefWidth="200.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="883.0" layoutY="101.0" text="Новое наименование:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="179.0" text="Новое описание:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="887.0" layoutY="417.0" mnemonicParsing="false" onAction="#updateSubtask" prefHeight="30.0" prefWidth="193.0" text="Редактировать подзадачу">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="241.0" layoutY="153.0" rotate="-90.0" text="Подзадачи">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="462.0" rotate="-90.0" text="Пункты подзадач">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
